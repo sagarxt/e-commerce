@@ -6,6 +6,7 @@ target/
 
 ### Project ###
 application.properties
+/ecommerce_backend/src/main/resources/application.properties
 
 ### STS ###
 .apt_generated
