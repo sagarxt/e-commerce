@@ -57,7 +57,7 @@ public class AuthController {
         boolean sent = mailService.sendMail(tempUser.getEmail(), "OTP Verification", body);
 
         if (sent) {
-            return ResponseEntity.ok("OTP sent to " + request.getEmail());
+            return ResponseEntity.ok("OTP sent to " + request.getEmail() + ".\nNot received? check in spam/junk folder");
         } else {
             return ResponseEntity.status(500).body("Failed to send OTP");
         }
